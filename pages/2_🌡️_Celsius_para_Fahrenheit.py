@@ -1,5 +1,8 @@
 import streamlit as st
-
+st.set_page_config(
+    page_title='°C para °F',
+    page_icon='🌡️'
+)
 def fahrenheit_to_celsius():
     st.session_state.celsius = (st.session_state.fahrenheit - 32) / 1.8
 
